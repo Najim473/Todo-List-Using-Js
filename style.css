@@ -1,0 +1,115 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #000;
+  background: linear-gradient(to top, #cfcba4 0%, #cfbe23 100%);
+}
+header {
+  font-size: 40px;
+}
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+form input,
+form button {
+  min-height: 50px;
+  border: none;
+  padding: 15px;
+}
+form button {
+  background: rgb(172, 123, 123);
+  cursor: pointer;
+  border-left: 1px solid rgb(172, 123, 123);
+}
+form button:hover {
+  background: rgb(58, 108, 202);
+}
+form input:focus {
+  outline: none;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo {
+  min-width: 200px;
+  margin-right: 0.5rem 0rem;
+  list-style: none;
+  /* transition: all 0.5s ease; */
+  /* transition: all 1s ease; */
+}
+.todoDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(133, 102, 102);
+  min-height: 30px;
+  transition: all 1.3s ease;
+
+  /* line-height: 20p ; */
+  margin: 1rem 0rem;
+}
+.todoDiv li {
+  flex: 1;
+  /* padding: ; */
+  /* transition: all 1s ease; */
+}
+.cancelBtn,
+.compleBtn {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 13px;
+  /* pointer-events: none; */
+  color: white;
+}
+.compleBtn {
+  cursor: pointer;
+  background: rgb(108, 218, 74);
+  /* transition: all 0.5s ease; */
+  /* transition: all 1s ease-in; */
+}
+.cancelBtn {
+  border-left: 0.5px dashed white;
+  cursor: pointer;
+  background: rgb(177, 46, 46);
+}
+.newLine {
+  text-align: center;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+  /* transition: all 1s ease; */
+}
+.fall {
+  transform: translateY(18rem) rotateZ(70deg);
+  opacity: 0;
+}
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select {
+  border: none;
+  outline: none;
+  margin: 1rem;
+}
+.select::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+}
